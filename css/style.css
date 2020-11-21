@@ -448,6 +448,7 @@ template {
   width: 65px;
   height: 100%;
   border: none;
+  cursor: pointer;
   background-color: #EC1F46;
 }
 
