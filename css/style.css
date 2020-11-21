@@ -460,6 +460,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  color: inherit;
 }
 
 .user__avatar {
