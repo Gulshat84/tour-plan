@@ -591,6 +591,10 @@ template {
   line-height: 18px;
 }
 
+.rating__five {
+  font-size: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -698,6 +702,9 @@ template {
 @media (max-width: 320px) {
   .container {
     max-width: 264px;
+  }
+  .hotel-info__name {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
