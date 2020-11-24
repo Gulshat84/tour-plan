@@ -678,6 +678,9 @@ template {
   .search__input {
     width: 340px;
   }
+  .slider {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -743,11 +746,28 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .slider {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .swiper-slide {
+    max-height: 450px;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-slide {
+    height: 100%;
   }
 }
 
