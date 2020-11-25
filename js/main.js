@@ -9,3 +9,10 @@ var mySwiper = new Swiper('.swiper-container', {
   },
   effect: "coverflow",
 });
+
+var mySwiper = new Swiper('.swiper-container', {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
