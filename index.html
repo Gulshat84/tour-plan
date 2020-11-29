@@ -8,9 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="stylesheet">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>     
+    rel="stylesheet">       
 </head>
 <body>
  <header class="navbar">
@@ -112,28 +110,24 @@
        </div>
      </div>
      <!-- /.hotel-info -->
-     <div class="hotel-grid">
-       <div class="slider hotel__slider">
-        <!-- Slider main container -->
-        <div class="swiper-container">
+     <div class="hotel-grid">       
+        <div class="swiper-container hotel-slider hotel__slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide-one.jpg" alt="slide"></div>
-            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide-two.jpg" alt="slide"></div>
-            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide-three.jpg" alt="slide"></div>            
-            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide-four.jpg" alt="slide"></div>            
-            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide-five.jpg" alt="slide"></div>            
-            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide-six.jpg" alt="slide"></div>            
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-one.jpg" alt="slide"></div>
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-two.jpg" alt="slide"></div>
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-three.jpg" alt="slide"></div>            
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-four.jpg" alt="slide"></div>            
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-five.jpg" alt="slide"></div>            
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-six.jpg" alt="slide"></div>            
           </div>
                   
           <!-- If we need navigation buttons -->
-          <button class="slider-button slider-button--prev"></button>
-          <button class="slider-button slider-button--next"></button>        
+          <button class="hotel-slider__button hotel-slider__button--prev"></button>
+          <button class="hotel-slider__button hotel-slider__button--next"></button>        
         </div>
-        <!-- /.swiper-container -->
-       </div>
-       <!-- /.slider -->
+        <!-- /.swiper-container -->       
        <div class="hotel-right">
         <div class="booking">
           <div class="booking__info">
@@ -195,6 +189,144 @@
    <!-- /.newsletter-wrapper -->
  </section>
  <!-- /.newsletter -->
+ <section class="reviews">
+   <div class="container">
+     <h2 class="reviews__title">What people think about us</h2>    <div class="swiper-container reviews-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar.jpg" alt="Megan Fox" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Megan Fox</h3>
+              <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+              <div class="reviews-slider__rating">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+              </div>
+              <!-- /.reviews-slider__rating -->
+            </div>
+            <!-- /.reviews-slider__profile -->
+            <p class="reviews-slider__text">
+              It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only
+              that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which
+              were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per
+              atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+              was a good experience and could recommend.
+            </p>
+            <!-- /.reviews-slider__text -->
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- /.swiper-slide -->
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-2.jpg" alt="Robert Burn" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Robert Burn</h3>
+              <span class="reviews-slider__date">Stayed 21 May, 2019</span>
+              <div class="reviews-slider__rating">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+              </div>
+              <!-- /.reviews-slider__rating -->
+            </div>
+            <!-- /.reviews-slider__profile -->
+            <p class="reviews-slider__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis accusamus magni distinctio doloribus. Deleniti nesciunt laborum placeat omnis hic quas repellat labore ullam nulla esse, iure, nihil fugit aliquid sed dolorum corporis tempora quos consequatur reprehenderit ratione maiores vero ipsum praesentium. Cumque distinctio aspernatur earum sed mollitia nam laborum maiores error, quae accusamus unde molestias incidunt tempore atque quis at. Aliquid repudiandae corporis explicabo quas quae mollitia minus voluptate rerum velit. Aperiam asperiores veritatis magni repudiandae iusto vel, molestias recusandae odit neque. Quisquam, minus totam. Repudiandae ut eos minus amet, velit, consequuntur pariatur dolorem, aliquid earum odio rerum rem. Quia?
+            </p>
+            <!-- /.reviews-slider__text -->
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- /.swiper-slide -->
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-3.jpg" alt="Barbara Push" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Barbara Push</h3>
+              <span class="reviews-slider__date">Stayed 28 Jun, 2019</span>
+              <div class="reviews-slider__rating">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+              </div>
+              <!-- /.reviews-slider__rating -->
+            </div>
+            <!-- /.reviews-slider__profile -->
+            <p class="reviews-slider__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, maxime adipisci odit fuga natus eveniet nam similique quod, necessitatibus modi veritatis ducimus vel totam perspiciatis eius eligendi voluptatibus? Autem, eius obcaecati! Sunt suscipit, dignissimos corporis tenetur aliquid quas, fugit accusantium dolore nulla magnam magni, itaque recusandae error. Aut quasi sint pariatur nisi adipisci ex numquam suscipit, fuga ipsum in! Ad delectus magnam earum expedita repellendus quae nesciunt aperiam adipisci sequi voluptate tenetur esse dignissimos eius voluptatem cum illo quasi voluptatum eligendi quaerat dolore inventore temporibus, id tempore quibusdam. Laudantium officiis fugit eos suscipit perspiciatis blanditiis in accusantium facilis. Earum, voluptatum.
+            </p>
+            <!-- /.reviews-slider__text -->
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- /.swiper-slide -->
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-4.jpg" alt="Sara Palmer" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Sara Palmer</h3>
+              <span class="reviews-slider__date">Stayed 11 Aug, 2019</span>
+              <div class="reviews-slider__rating">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+              </div>
+              <!-- /.reviews-slider__rating -->
+            </div>
+            <!-- /.reviews-slider__profile -->
+            <p class="reviews-slider__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eaque accusamus repellat dolorum, incidunt a qui temporibus quae excepturi doloremque. Fuga unde expedita deleniti repudiandae illo, autem rem distinctio aperiam doloremque tempore quia numquam voluptates eaque corrupti illum natus quasi totam suscipit quaerat vel, blanditiis non ex fugiat deserunt. Et culpa placeat natus neque ducimus aspernatur totam temporibus officia quidem, tenetur quibusdam velit est, delectus cum commodi? Consequuntur minima pariatur at, aut perspiciatis, eligendi placeat deleniti fugiat amet quidem est. Perspiciatis molestias possimus doloribus, fugiat amet perferendis, iusto placeat ipsam, quam commodi tempora quas aspernatur temporibus illum dolores dignissimos voluptatum?
+            </p>
+            <!-- /.reviews-slider__text -->
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- /.swiper-slide -->
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-5.jpg" alt="Roderik Grehem" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Roderik Grehem</h3>
+              <span class="reviews-slider__date">Stayed 18 Oct, 2018</span>
+              <div class="reviews-slider__rating">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+              </div>
+              <!-- /.reviews-slider__rating -->
+            </div>
+            <!-- /.reviews-slider__profile -->
+            <p class="reviews-slider__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolorum similique ut, illo dignissimos repudiandae sit suscipit sequi? Nam unde similique qui, temporibus esse ad, non quo obcaecati nulla aspernatur praesentium illum libero dolorem ratione deserunt quaerat earum odio voluptas, accusantium a facere laudantium? Quo quaerat, sequi soluta porro deleniti, dolor magnam inventore, pariatur corrupti tempora id? Quibusdam deserunt itaque libero rerum ut ducimus maiores repellendus adipisci repudiandae, laudantium aliquam eaque commodi doloremque quis delectus. Eius quas eum saepe dolor facere est ipsam vero iste dolores repellat ipsum eaque, consectetur odit vitae labore suscipit nam corporis, corrupti atque, consequatur pariatur!
+            </p>
+            <!-- /.reviews-slider__text -->
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- /.swiper-slide -->
+      </div>
+      <!-- /.swiper-wrapper -->
+      <button class="reviews-slider__button reviews-slider__button--prev"></button>
+      <button class="reviews-slider__button reviews-slider__button--next"></button>
+     </div>
+     <!-- /.reviews-slider -->
+    </div>
+    <!-- /.container -->
+ </section>
+ <!-- /.reviews -->
  <script src="js/swiper-bundle.min.js"></script>
  <script src="js/main.js"></script>
 </body>
