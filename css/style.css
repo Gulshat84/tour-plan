@@ -541,7 +541,6 @@ template {
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
-  width: 100%;
 }
 
 .hotel-wrapper {
@@ -808,6 +807,198 @@ template {
   overflow: hidden;
 }
 
+.packages {
+  padding-bottom: 70px;
+}
+
+.packages-title {
+  margin-top: 40px;
+  margin-bottom: 65px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.packages-card {
+  border-radius: 8px 8px;
+}
+
+.packages-card__info {
+  padding: 30px 20px 30px 30px;
+  background-color: #0A223D;
+  color: #fff;
+}
+
+.packages-card__title {
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 6px;
+}
+
+.packages-card__span {
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.packages-card__blue {
+  width: 730px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Blue;
+}
+
+.packages-card__belle {
+  width: 350px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: Belle;
+}
+
+.packages-card__white {
+  width: 350px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: White;
+}
+
+.packages-card__lixury {
+  width: 350px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: Luxury;
+}
+
+.packages-card__five {
+  width: 350px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: Five;
+}
+
+.packages__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.packages-benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 37px;
+}
+
+.packages__price {
+  display: block;
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 18px;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+.packages__pricetag {
+  display: block;
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 30px;
+}
+
+.packages__button {
+  display: block;
+  width: 120px;
+  height: 40px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.packages-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-rows: 500px 500px;
+  -ms-grid-columns: 350px 350px 350px;
+      grid-template: 500px 500px / 350px 350px 350px;
+      grid-template-areas: "Blue Blue Belle" "White Luxury Five";
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1049,6 +1240,7 @@ template {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
   margin-bottom: 57px;
 }
 
