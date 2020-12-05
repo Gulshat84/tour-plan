@@ -36,25 +36,41 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 58px
     &-grid
       flex-direction: column
     &-slider
       max-width: 700px
     &__slider
-      margin-bottom: 30px
+      margin-bottom: 29px
     &-right
       flex-direction: row
     &-slider
       width: 100%
   .booking
     width: 340px
+    padding: 28px 23px
   .map
     width: 340px
+  .newsletter
+    padding: 70px 34px 75px 34px
+    min-height: 260px
   .reviews
+    padding-top: 15px
+    padding-bottom: 60px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 580px
+      &__avatar
+        margin-bottom: 0
+      &__username
+        margin-bottom: 7px
   .activities
+    padding-bottom: 49px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -68,40 +84,49 @@
     padding-top: 73px
     padding-bottom: 33px
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
-      grid-row-gap: 40px
+      grid-template-columns: 172px 280px 222px
+      grid-row-gap: 0
     &__input
       flex-basis: 48%
     &-logo
       width: 104px
       grid-row: 1 / 2
-      grid-column: span 2
-      margin-bottom: 39px
+      grid-column: 1
     &__social
       &-network
         grid-row: 1 / 2
-        grid-column: span 4
+        grid-column: span 3
         align-self: center
     &__categories
       grid-row: 3
-      grid-column: span 2
+      grid-column: 1
     &__legal
       grid-row: 3
-      grid-column: span 2
+      grid-column: 3
     &__additional
       grid-row: 3
-      grid-column: span 2
+      grid-column: 2
     &__contact
       &-details
-        grid-column: span 5
+        grid-column: span 3
         grid-row: 4
+        margin-top: 68px
       &-form
-        grid-column: span 5
+        max-width: 539px
+        grid-column: span 3
         grid-row: 5
+        margin-top: 56px
+
+    &__message
+      margin-bottom: 21px
+    &__text
+      margin-bottom: 26px
     &__personal
       grid-row: 6
       grid-column: span 6
-      margin: 0
+      width: 700px
+      margin-left: 0
+      margin-top: 52px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -192,7 +217,8 @@
     &-slider
       height: 250px
   .newsletter
-    padding: 76px 0 83px 0
+    padding: 76px 20px 83px 20px
+    height: 319px
     &__title
       margin-bottom: 37px
   .subscribe
@@ -200,9 +226,8 @@
   .reviews
     padding: 40px 0 40px 0
     &__title
-      font-size: 22px
-      margin-top: 40px
-      margin-bottom: 42px
+      font-size: 18px
+      line-height: 22px
     &-slider
       &__text
         text-align: left
@@ -210,8 +235,8 @@
     padding: 30px 0 60px 0
     &__title
       width: 165px
-      font-size: 22px
-      line-height: 26px
+      font-size: 18px
+      line-height: 22px
       margin-bottom: 36px
   .card
     width: 100%
@@ -220,7 +245,10 @@
     padding-bottom: 21px
     &-wrapper
       grid-template-columns: 1fr
+      grid-row-gap: 30px
     &-logo
+      width: 104px
+      height: 120px
       grid-row: 1
       grid-column: 1
       margin-bottom: 30px
@@ -231,21 +259,24 @@
         flex-direction: column
         margin-bottom: 30px
     &__additional
-      grid-row: 3
-      grid-column: 1
-    &__categories
       grid-row: 4
       grid-column: 1
-    &__legal
+    &__categories
       grid-row: 5
+      grid-column: 1
+      padding-bottom: 10px
+    &__legal
+      grid-row: 3
       grid-column: 1
     &__contact
       &-details
         grid-row: 6
         grid-column: 1
+        padding-bottom: 30px
       &-form
         grid-row: 7
         grid-column: 1
+        margin: auto
     &__text
       margin-top: 30px
     &__title
@@ -265,17 +296,23 @@
       flex-wrap: wrap
       grid-row: 8
       grid-column: 1
+      margin: auto
       &-policy
         margin-bottom: 10px
 @media (max-width: 320px)
   .container
     max-width: 264px
+  .breadcrumb
+    padding-bottom: 0
   .hotel
+    padding-top: 10px
     &-info
       &__name
         font-size: 20px
     &-slider
-      height: 180px
+      height: 178px
+  .map
+    height: 173px
   .newsletter
     height: 319px
     &__title
@@ -286,10 +323,15 @@
         font-size: 30px
         line-height: 37px
   .reviews
+    padding-top: 40px
+    padding-bottom: 50px
     &-slider
       &__item
-        padding: 0 31px
+        padding: padding: 0 31px 36px
       &__text
+        height: 266px
+        overflow: hidden
+        text-overflow: ellipsis
         text-align: left
   .footer
     &__personal
