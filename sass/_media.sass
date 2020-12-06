@@ -84,7 +84,7 @@
     padding-top: 73px
     padding-bottom: 33px
     &-wrapper
-      grid-template-columns: 172px 280px 222px
+      grid-template-columns: 172px 280px 1fr
       grid-row-gap: 0
     &__input
       flex-basis: 48%
@@ -112,18 +112,14 @@
         grid-row: 4
         margin-top: 68px
       &-form
-        max-width: 539px
         grid-column: span 3
         grid-row: 5
         margin-top: 56px
-
     &__message
       margin-bottom: 21px
     &__text
       margin-bottom: 26px
     &__personal
-      grid-row: 6
-      grid-column: span 6
       width: 700px
       margin-left: 0
       margin-top: 52px
@@ -280,8 +276,7 @@
   .card
     width: 100%
   .footer
-    padding-top: 69px
-    padding-bottom: 21px
+    padding: 69px 20px 21px
     &-wrapper
       grid-template-columns: 1fr
       grid-row-gap: 30px
@@ -297,6 +292,9 @@
         grid-column: 1
         flex-direction: column
         margin-bottom: 30px
+    &__legal
+      grid-row: 3
+      grid-column: 1
     &__additional
       grid-row: 4
       grid-column: 1
@@ -304,9 +302,6 @@
       grid-row: 5
       grid-column: 1
       padding-bottom: 10px
-    &__legal
-      grid-row: 3
-      grid-column: 1
     &__contact
       &-details
         grid-row: 6
@@ -333,8 +328,6 @@
       margin-bottom: 30px
     &__personal
       flex-wrap: wrap
-      grid-row: 8
-      grid-column: 1
       margin: auto
       &-policy
         margin-bottom: 10px
@@ -366,7 +359,7 @@
     padding-bottom: 50px
     &-slider
       &__item
-        padding: padding: 0 31px 36px
+        padding: 0 31px 36px
       &__text
         height: 266px
         overflow: hidden
@@ -374,4 +367,5 @@
         text-align: left
   .footer
     &__personal
+      width: 277px
       margin-top: 30px
