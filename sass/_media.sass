@@ -84,43 +84,44 @@
     padding-top: 73px
     padding-bottom: 33px
     &-wrapper
-      grid-template-columns: 172px 280px 1fr
-      grid-row-gap: 0
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 38px
     &__input
       flex-basis: 48%
     &-logo
       width: 104px
       grid-row: 1 / 2
-      grid-column: 1
+      grid-column: span 2
+      margin-bottom: 38px
     &__social
       &-network
         grid-row: 1 / 2
-        grid-column: span 3
+        grid-column: span 4
         align-self: center
     &__categories
-      grid-row: 3
-      grid-column: 1
+      grid-row: 2 / 3
+      grid-column: span 2
     &__legal
-      grid-row: 3
-      grid-column: 3
+      grid-row: 2
+      grid-column: span 2
     &__additional
-      grid-row: 3
-      grid-column: 2
+      grid-row: 2
+      grid-column: span 2
     &__contact
       &-details
-        grid-column: span 3
-        grid-row: 4
+        grid-column: span 5
+        grid-row: 3
         margin-top: 68px
       &-form
-        grid-column: span 3
-        grid-row: 5
+        grid-column: span 5
+        grid-row: 4
         margin-top: 56px
     &__message
       margin-bottom: 21px
     &__text
       margin-bottom: 26px
     &__personal
-      width: 700px
+      max-width: 698px
       margin-left: 0
       margin-top: 52px
 @media (max-width: 768px)
@@ -156,6 +157,7 @@
       padding-top: 30px
       &--visible
         display: block
+        overflow: scroll
     &-menu
       flex-direction: column
       &__item
@@ -243,9 +245,18 @@
   .footer
     &__input
       flex-basis: 100%
+    &__personal
+      max-width: 698px
+      flex-wrap: wrap
 @media (max-width: 576px)
   .logo
     width: 99px
+  .navbar
+    &-menu
+      height:
+    &__search
+      width: 245px
+      height: 40px
   .hotel
     &__slider
       margin-bottom: 20px
@@ -329,17 +340,27 @@
       margin-bottom: 30px
     &__personal
       flex-wrap: wrap
-      margin: auto
+      margin-left: 0
       &-policy
         margin-bottom: 10px
+        width: 100%
   .modal
     &__dialog
-      padding: 20px 15px
+      width: 80%
+      padding: 33px 70px
+      margin: auto
+      &--visible
+        visibility: visible
+        opacity: 1
+        overflow: auto
+        max-height: 100%
     &__button
       margin-bottom: 15px
+    &__title
+      font-size: 22px
 @media (max-width: 320px)
   .container
-    max-width: 264px
+    max-width: 281px
   .breadcrumb
     padding-bottom: 0
   .hotel
@@ -372,6 +393,11 @@
         text-overflow: ellipsis
         text-align: left
   .footer
+    &__title
+    &--mb-4
+      margin-top: 0
+      margin-bottom: 15px
     &__personal
-      width: 277px
       margin-top: 30px
+      &-policy
+        width: 100%
