@@ -72,7 +72,19 @@ $(document).ready(function () {
      },
    }     
   });
+
+  $(".subscribe").validate({
+   errorClass: "invalid",
+   messages: {
+      email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+     },
+    },
+  });
  });
 
  $('#phone').mask('+7(999)999-99-99');
+
+ AOS.init();
 });

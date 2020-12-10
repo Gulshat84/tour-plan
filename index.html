@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
@@ -193,11 +194,11 @@
  <!-- /.hotel -->
  <section class="newsletter">
    <div class="newsletter-wrapper">
-     <h2 class="newsletter-title newsletter__title">subscribe to our
+     <h2 class="newsletter-title newsletter__title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">subscribe to our
        <span class="newsletter-title__strong">Newsletter</span>
      </h2>
-     <form action="#" class="subscribe newsletter__subscribe">
-      <input type="email" class="subscribe__input" placeholder="Your email address" />
+     <form action="#" class="subscribe newsletter__subscribe" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+      <input type="email" class="subscribe__input" placeholder="Your email address" required/>
       <button class="subscribe__button">Send</button>
      </form>
    </div>
@@ -346,7 +347,7 @@
    <div class="container">
      <h2 class="activities__title">Other Activities</h2>
      <div class="activities-wrapper">
-       <div class="card activities__card">
+       <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
          <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
          <h3 class="card__title">The curious corner of chamarel</h3>
          <!-- /.card__title -->
@@ -354,7 +355,7 @@
          <!-- /.card__button -->
        </div>
        <!-- /.card -->
-       <div class="card activities__card">
+       <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
          <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
          <h3 class="card__title">Gymkhana club golf course</h3>
          <!-- /.card__title -->
@@ -362,7 +363,7 @@
          <!-- /.card__button -->
        </div>
        <!-- /.card -->
-       <div class="card activities__card">
+       <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
          <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
          <h3 class="card__title">Tamarind falls hiking trip-full day</h3>
          <!-- /.card__title -->
@@ -370,7 +371,7 @@
          <!-- /.card__button -->
        </div>
        <!-- /.card -->
-       <div class="card activities__card">
+       <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
          <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
          <h3 class="card__title">The blue marine discovery quest</h3>
          <!-- /.card__title -->
@@ -535,6 +536,7 @@
  <script src="js/swiper-bundle.min.js"></script>
  <script src="js/jquery.mask.min.js"></script>
  <script src="js/jquery.validate.min.js"></script>
+ <script src="js/aos.js"></script>
  <script src="js/main.js"></script>
 </body>
 </html>
