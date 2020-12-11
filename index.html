@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="stylesheet">       
+    rel="preload">       
 </head>
 <body>
  <header class="navbar navbar__mobile navbar__mobile--fixed">
@@ -197,7 +199,7 @@
      <h2 class="newsletter-title newsletter__title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">subscribe to our
        <span class="newsletter-title__strong">Newsletter</span>
      </h2>
-     <form action="#" class="subscribe newsletter__subscribe" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+     <form action="send.php" class="subscribe newsletter__subscribe form" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
       <input type="email" class="subscribe__input" placeholder="Your email address" required/>
       <button class="subscribe__button">Send</button>
      </form>
@@ -475,11 +477,11 @@
         <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
         <form action="send.php" method="POST" class="footer__form form">
           <div class="footer__input-group">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
           </div>
           <!-- /.footer__input-group -->
           <div class="footer__input-group">
-            <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+            <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required minlength="16">
           </div>
           <!-- /.footer__input-group -->          
           <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
@@ -491,19 +493,22 @@
       <!-- /.footer__contact-form -->      
      </div>
      <!-- /.footer-wrapper -->
-    <div class="footer__personal">
-      <div class="footer__personal-policy">
-        <a href="#" class="footer__link-responsibility">Disclaimer</a>
-        <a href="#" class="footer__link-responsibility">Conditions of use</a>
-        <a href="#" class="footer__link-responsibility">Cancellation policy</a>
+    <div class="footer-wrap">
+      <div class="footer__personal">
+        <div class="footer__personal-policy">
+          <a href="#" class="footer__link-responsibility">Disclaimer</a>
+          <a href="#" class="footer__link-responsibility">Conditions of use</a>
+          <a href="#" class="footer__link-responsibility">Cancellation policy</a>
+        </div>
+        <!-- /.footer__personal-policy -->
+        <div class="footer__personal-payment">
+          <img src="img/payment.png" alt="Payment systems">
+        </div>
+        <!-- /.footer__personal-payment -->
       </div>
-      <!-- /.footer__personal-policy -->
-      <div class="footer__personal-payment">
-        <img src="img/payment.png" alt="Payment systems">
-      </div>
-      <!-- /.footer__personal-payment -->
+      <!-- /.footer__personal -->
     </div>
-    <!-- /.footer__personal -->
+    <!-- /.footer-wrap -->
    </div>
    <!-- /.container -->
  </footer>
@@ -518,8 +523,8 @@
       <div class="modal__contact-form">
         <h3 class="modal__title modal__title--mb-4">Send us a message</h3>
         <form action="send.php" method="POST" class="modal__form form">
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
-          <input type="tel" class="input modal__input" id="phone" placeholder="Phone Number*" name="phone" required>
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+          <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="16">
           <input type="email" class="input modal__input" placeholder="Your Email*" name="email" required>
           <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
           <button class="button modal__button" type="submit">Send</button>

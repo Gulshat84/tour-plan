@@ -68,23 +68,14 @@ $(document).ready(function () {
       email: "Your email address must be in the format of name@domain.com",
      },
      phone: {
-       required: "Phone is required"
-     },
-   }     
-  });
-
-  $(".subscribe").validate({
-   errorClass: "invalid",
-   messages: {
-      email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com",
+       required: "We need your phone number",
+       minlength: "Your phone number must be at least 11 digits",
      },
     },
+   });     
   });
- });
 
- $('#phone').mask('+7(999)999-99-99');
-
- AOS.init();
+  $('.phone').mask('+7(999)999-99-99');
+  
+  AOS.init(); 
 });

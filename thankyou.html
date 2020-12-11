@@ -212,9 +212,15 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
+            </div>
+            <!-- /.footer__input-group -->
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required minlength="16">
+            </div>
+            <!-- /.footer__input-group -->            
             <textarea class="footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -222,26 +228,34 @@
           <!-- /.footer__form -->
         </div>
         <!-- /.footer__contact-form -->
-        <div class="footer__personal">
-          <div class="footer__personal-policy">
-            <a href="#" class="footer__link-responsibility">Disclaimer</a>
-            <a href="#" class="footer__link-responsibility">Conditions of use</a>
-            <a href="#" class="footer__link-responsibility">Cancellation policy</a>
-          </div>
-          <!-- /.footer__personal-policy -->
-          <div class="footer__personal-payment">
-            <img src="img/payment.png" alt="Payment systems">
-          </div>
-          <!-- /.footer__personal-payment -->
-        </div>
-        <!-- /.footer__personal -->
       </div>
       <!-- /.footer-wrapper -->
+        <div class="footer-wrap">
+          <div class="footer__personal">
+            <div class="footer__personal-policy">
+              <a href="#" class="footer__link-responsibility">Disclaimer</a>
+              <a href="#" class="footer__link-responsibility">Conditions of use</a>
+              <a href="#" class="footer__link-responsibility">Cancellation policy</a>
+            </div>
+            <!-- /.footer__personal-policy -->
+            <div class="footer__personal-payment">
+              <img src="img/payment.png" alt="Payment systems">
+            </div>
+            <!-- /.footer__personal-payment -->
+          </div>
+          <!-- /.footer__personal -->
+        </div>
+        <!-- /.footer-wrap -->        
+      
     </div>
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 
