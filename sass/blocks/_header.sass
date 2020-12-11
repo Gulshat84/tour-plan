@@ -33,6 +33,10 @@
           display: none
 .logo
   width: 177px
+  transition: 0.3s
+  &:hover
+    border: 2px solid #2868e0
+    border-radius: 4px
 .search
   display: flex
   position: relative
@@ -58,11 +62,18 @@
     border: none
     cursor: pointer
     background-color: $primary
+    transition: 0.3s
+    &:hover
+      background-color: #3d0c1f
 .user
   display: flex
   align-items: center
   text-decoration: none
   color: inherit
+  transition: 0.3s
+  &:hover
+    border: 2px solid #2868e0
+    border-radius: 4px
   &__avatar
     width: 40px
     height: 40px
