@@ -16,31 +16,93 @@
     &__input
       &-group
         flex-basis: 100%
+@media (min-width: 992px)
+  .hotel
+    &-slider
+      &__button
+        transition: 0.3s
+        &:hover
+          border: 2px solid #2868e0
+          border-radius: 4px
+  .logo
+    transition: 0.3s
+    &:hover
+      border: 2px solid #2868e0
+      border-radius: 4px
+  .search
+    &__button
+      transition: 0.3s
+      &:hover
+        background-color: #3d0c1f
+  .user
+    transition: 0.3s
+    &:hover
+      border: 2px solid #2868e0
+      border-radius: 4px
+  .navbar
+    &-menu
+      &__link
+        transition: 0.3s
+        &:hover
+          border: 2px solid #2868e0
+          border-radius: 4px
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          background-color: $dark
+  .subscribe
+    &__button
+      transition: 0.3s
+      &:hover
+        background-color: #3d0c1f
+  .reviews
+    &-slider
+      &__button
+        transition: 0.3s
+        &:hover
+          border: 2px solid #2868e0
+          border-radius: 4px
+  .card
+    &__button
+      transition: 0.3s
+      &:hover
+        background-color: #3d0c1f
+  .footer
+    &__social
+      &-links
+        transition: 0.3s
+        &:hover
+          background-color: #fff
+    &__item
+      &--a
+        transition: 0.3s
+        &:hover
+          background-color: #fff
+    &__link
+      transition: 0.3s
+      &:hover
+        background-color: #fff
+      &-responsibility
+        transition: 0.3s
+        &:hover
+          background-color: #fff
+  .button
+    transition: 0.3s
+    &:hover
+      background-color: #3d0c1f
+  .modal
+    &__close
+      transition: 0.3s
+      &:hover
+        border: 2px solid #fff
+        border-radius: 4px
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
-    &:hover
-      display: none
   .navbar
-    &-menu
-      &__link
-        &:hover
-          display: none
-    &__button
-      &:hover
-        display: none
-  .user
-    &:hover
-      display: none
-  .button
-    &:hover
-      display: none
-  .breadcrumb
-    &__link
-      &:hover
-        display: none
     &-top
       padding-top: 30px
       padding-bottom: 30px
@@ -61,9 +123,6 @@
       flex-direction: column
     &-slider
       max-width: 700px
-      &__button
-        &:hover
-          display: none
     &__slider
       margin-bottom: 29px
     &-right
@@ -78,10 +137,6 @@
   .newsletter
     padding: 70px 34px 75px 34px
     min-height: 260px
-  .subscribe
-    &__button
-      &:hover
-        display: none
   .reviews
     padding-top: 15px
     padding-bottom: 60px
@@ -96,9 +151,6 @@
         margin-bottom: 0
       &__username
         margin-bottom: 7px
-      &__button
-        &:hover
-          display: none
   .activities
     padding-bottom: 49px
     &-wrapper
@@ -129,9 +181,6 @@
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
-        &-links
-          &:hover
-            display: none
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
@@ -158,16 +207,6 @@
       max-width: 698px
       margin-left: 0
       margin-top: 52px
-    &__item
-      &--a
-        &:hover
-          display: none
-    &__link
-      &:hover
-        display: none
-        &-responsibility
-          &:hover
-            display: none
 @media (max-width: 768px)
   .container
     max-width: 576px
